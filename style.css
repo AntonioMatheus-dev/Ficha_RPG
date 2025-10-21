@@ -1,0 +1,121 @@
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: radial-gradient(circle at top, #202020, #0d0d0d);
+  color: #eee;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  background: #1b1b1b;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  width: 400px;
+}
+
+h1 {
+  text-align: center;
+  color: #ffcc00;
+  margin-bottom: 20px;
+}
+
+h2 {
+  margin-top: 15px;
+  color: #ffa500;
+  border-bottom: 1px solid #333;
+  padding-bottom: 5px;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+  color: #ccc;
+}
+
+input {
+  width: 100%;
+  padding: 6px;
+  border: 1px solid #555;
+  border-radius: 5px;
+  background: #262626;
+  color: #fff;
+  margin-bottom: 5px;
+}
+
+button {
+  margin-top: 15px;
+  width: 100%;
+  background: #ffcc00;
+  color: #000;
+  font-weight: bold;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #ffdd33;
+}
+
+#resultado {
+  display: none;
+  background: #111;
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #333;
+}
+
+pre {
+  color: #9f9;
+  white-space: pre-wrap;
+}
+
+.classes {
+  display: flex;
+  flex-direction: column;
+  gap: 8px; /* espaçamento entre opções */
+  margin-bottom: 12px;
+}
+
+.classes label {
+  display: flex;
+  align-items: center; /* alinha a caixa e o texto verticalmente */
+  gap: 8px; /* espaço entre a bolinha e o texto */
+  font-size: 16px;
+  cursor: pointer;
+  line-height: 1.2;
+}
+
+input[type="radio"] {
+  appearance: none; /* remove estilo padrão do navegador */
+  width: 18px;
+  height: 18px;
+  border: 2px solid #00ff99;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  transform: translateY(1px);
+}
+
+input[type="radio"]:checked::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background: #00ff99;
+  border-radius: 50%;
+}
+
+input[type="radio"]:focus {
+  outline: 2px solid #00ff99;
+  outline-offset: 2px;
+}
