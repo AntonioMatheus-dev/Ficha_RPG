@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ficha de RPG</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Ficha de Personagem - Sistema RPG</h1>
+
+    <form id="ficha-form">
+      <h2>Identidade do Personagem</h2>
+
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" required>
+
+      
+      <label>Classe:</label>
+      <div id="classes">
+        <label><input type="radio" name="classe" value="Corpo a Corpo" required> Corpo a Corpo</label>
+        <label><input type="radio" name="classe" value="Mago"> Mago</label>
+        <label><input type="radio" name="classe" value="Arqueiro"> Arqueiro</label>
+        <label><input type="radio" name="classe" value="Curandeiro"> Curandeiro</label>
+      </div>
+
+      <label for="raca">Raça:</label>
+      <input type="text" id="raca" required>
+      
+      <label for="elemento">Elemento:</label>
+      <input type="text" id="elemento" required>
+
+      <label for="nivel">Nível:</label>
+      <input type="number" id="nivel" min="1" value="1">
+
+      <h2>Atributos Iniciais</h2>
+      <div class="atributos">
+        <label for="vida">HP (Vida):</label>
+        <input type="number" id="vida" min="1" value="100">
+
+        <label for="mana">E.U (Energia Universal):</label>
+        <input type="number" id="mana" min="0" value="50">
+
+        <label for="estamina">STA (Estamina):</label>
+        <input type="number" id="estamina" min="1" value="10">
+
+        <label for="sanidade">SAN (Sanidade):</label>
+        <input type="number" id="sanidade" min="1" value="5">
+
+        <label for="vontade">VOL (Vontade):</label>
+        <input type="number" id="vontade" min="1" value="5">
+
+        <label for="ouro">Ouro:</label>
+        <input type="number" id="ouro" min="0" value="0">
+
+        <label for="xp">EXP:</label>
+        <input type="number" id="xp" min="0" value="0">
+      </div>
+
+      <h2>Perícias</h2>
+      <div class="pericias">
+        <label for="forca">Força:</label>
+        <input type="number" id="forca" min="1" max="20" value="10">
+
+        <label for="inteligencia">Inteligência:</label>
+        <input type="number" id="inteligencia" min="1" max="20" value="10">
+
+        <label for="sabedoria">Sabedoria:</label>
+        <input type="number" id="sabedoria" min="1" max="20" value="10">
+
+        <label for="carisma">Carisma:</label>
+        <input type="number" id="carisma" min="1" max="20" value="10">
+
+        <label for="combate-armas">Combate de Armas:</label>
+        <input type="number" id="combate-armas" min="1" max="20" value="10">
+
+        <label for="investigacao">Investigação:</label>
+        <input type="number" id="investigacao" min="1" max="20" value="10">
+
+        <label for="intimidacao">Intimidação:</label>
+        <input type="number" id="intimidacao" min="1" max="20" value="10">
+
+        <label for="domesticacao">Domesticação:</label>
+        <input type="number" id="domesticacao" min="1" max="20" value="10">
+
+        <label for="sorte">Sorte:</label>
+        <input type="number" id="sorte" min="1" max="20" value="10">
+
+        <label for="pontaria">Pontaria:</label>
+        <input type="number" id="pontaria" min="1" max="20" value="10">
+
+        <label for="agilidade">Agilidade:</label>
+        <input type="number" id="agilidade" min="1" max="20" value="10">
+
+        <label for="acrobacias">Acrobacias:</label>
+        <input type="number" id="acrobacias" min="1" max="20" value="10">
+
+        <label for="artes-marciais">Artes Marciais:</label>
+        <input type="number" id="artes-marciais" min="1" max="20" value="10">
+
+        <label for="cultura">Cultura:</label>
+        <input type="number" id="cultura" min="1" max="20" value="10">
+
+        <label for="medicina">Medicina:</label>
+        <input type="number" id="medicina" min="1" max="20" value="10">
+
+        <h2>Pactos</h2>
+        <input type="text" id="pacto" required>
+
+        <h2>Iventario</h2>
+      <div id="iventario">
+        <label><input type="radio" name="item" value="item_1" required></label> 
+        <input type="text">
+        <label><input type="radio" name="item" value="item_2"></label>
+        <input type="text">
+        <label><input type="radio" name="item" value="item_3"></label>
+        <input type="text">
+        <label><input type="radio" name="item" value="item_4"></label>
+        <input type="text">
+        <label><input type="radio" name="item" value="item_5"></label>
+        <input type="text">
+        <label><input type="radio" name="item" value="item_6"></label>
+        <input type="text">
+        <label><input type="radio" name="item" value="item_7"></label>
+        <input type="text">
+      </div>
+        
+
+      </div>
+
+      <button type="submit">Salvar Ficha</button>
+
+    </form>
+
+    <div id="resultado">
+      <h2>Ficha Salva</h2>
+      <pre id="ficha-json"></pre>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
