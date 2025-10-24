@@ -79,6 +79,31 @@ button:hover {
   border: 1px solid #333;
 }
 
+.mensagem {
+  padding: 10px;
+  border-radius: 5px;
+  margin: 10px 0;
+  text-align: center;
+  animation: fadeIn 0.3s ease-in;
+}
+
+.mensagem.sucesso {
+  background-color: #1a472a;
+  color: #2ecc71;
+  border: 1px solid #2ecc71;
+}
+
+.mensagem.erro {
+  background-color: #4a1919;
+  color: #e74c3c;
+  border: 1px solid #e74c3c;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
 pre {
   color: #9f9;
   white-space: pre-wrap;
