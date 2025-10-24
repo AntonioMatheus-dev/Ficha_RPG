@@ -37,7 +37,7 @@ label {
   color: #ccc;
 }
 
-input {
+input, textarea {
   width: 100%;
   padding: 6px;
   border: 1px solid #555;
@@ -45,6 +45,12 @@ input {
   background: #262626;
   color: #fff;
   margin-bottom: 5px;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 100px;
+  font-family: inherit;
 }
 
 button {
@@ -118,4 +124,54 @@ input[type="radio"]:checked::before {
 input[type="radio"]:focus {
   outline: 2px solid #00ff99;
   outline-offset: 2px;
+}
+
+/* Estilos para o inventário */
+.inventario-grid {
+  display: grid;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.item-entrada {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.item-entrada label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0;
+  min-width: 80px;
+}
+
+.item-entrada input[type="text"] {
+  flex: 1;
+}
+
+input[type="checkbox"] {
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  border: 2px solid #00ff99;
+  border-radius: 4px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  cursor: pointer;
+}
+
+input[type="checkbox"]:checked {
+  background-color: #00ff99;
+  position: relative;
+}
+
+input[type="checkbox"]:checked::before {
+  content: "✓";
+  color: #262626;
+  font-size: 14px;
+  font-weight: bold;
 }
