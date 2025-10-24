@@ -107,24 +107,38 @@
         <input type="number" id="medicina" min="1" max="20" value="10">
 
         <h2>Pactos</h2>
-        <input type="text" id="pacto" required>
+        <textarea id="pacto" rows="4" required></textarea>
 
-        <h2>Iventario</h2>
-      <div id="iventario">
-        <label><input type="radio" name="item" value="item_1" required></label> 
-        <input type="text">
-        <label><input type="radio" name="item" value="item_2"></label>
-        <input type="text">
-        <label><input type="radio" name="item" value="item_3"></label>
-        <input type="text">
-        <label><input type="radio" name="item" value="item_4"></label>
-        <input type="text">
-        <label><input type="radio" name="item" value="item_5"></label>
-        <input type="text">
-        <label><input type="radio" name="item" value="item_6"></label>
-        <input type="text">
-        <label><input type="radio" name="item" value="item_7"></label>
-        <input type="text">
+        <h2>Inventário</h2>
+      <div id="inventario" class="inventario-grid">
+        <div class="item-entrada">
+          <label><input type="checkbox" name="item[]" value="item_1"> Item 1</label>
+          <input type="text" placeholder="Nome do item">
+        </div>
+        <div class="item-entrada">
+          <label><input type="checkbox" name="item[]" value="item_2"> Item 2</label>
+          <input type="text" placeholder="Nome do item">
+        </div>
+        <div class="item-entrada">
+          <label><input type="checkbox" name="item[]" value="item_3"> Item 3</label>
+          <input type="text" placeholder="Nome do item">
+        </div>
+        <div class="item-entrada">
+          <label><input type="checkbox" name="item[]" value="item_4"> Item 4</label>
+          <input type="text" placeholder="Nome do item">
+        </div>
+        <div class="item-entrada">
+          <label><input type="checkbox" name="item[]" value="item_5"> Item 5</label>
+          <input type="text" placeholder="Nome do item">
+        </div>
+        <div class="item-entrada">
+          <label><input type="checkbox" name="item[]" value="item_6"> Item 6</label>
+          <input type="text" placeholder="Nome do item">
+        </div>
+        <div class="item-entrada">
+          <label><input type="checkbox" name="item[]" value="item_7"> Item 7</label>
+          <input type="text" placeholder="Nome do item">
+        </div>
       </div>
         
 
